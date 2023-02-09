@@ -1,16 +1,61 @@
 @font-face {
     font-family: 'Montserrat';
-    src: url(../fonts/montserrat-regular.woff2),
-         url(../fonts/montserrat-regular.woff);
+    src: url(../fonts/Montserrat-SemiBold.woff2),
+         url(../fonts/Montserrat-SemiBold.woff);
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neumann';
+    src: url(../fonts/Neumann.woff2),
+         url(../fonts/Neumann.woff);
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url(../fonts/montserrat-bold.woff2),
-         url(../fonts/montserrat-bold.woff);
+    font-family: 'RobotoCondensed';
+    src: url(../fonts/RobotoCondensed-Light.woff2),
+         url(../fonts/RobotoCondensed-Light.woff);
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Light.woff2),
+         url(../fonts/Roboto-Light.woff);
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.woff2),
+         url(../fonts/Roboto-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Medium.woff2),
+         url(../fonts/Roboto-Medium.woff);
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Bold.woff2),
+         url(../fonts/Roboto-Bold.woff);
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -22,19 +67,102 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
+
 ul, ol, dl {
     list-style: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container-big {
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.container-small {
+    width: 100%;
+    max-width: 1240px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
 .page__body {
     max-width: 100%;
-    min-width: 360px;
+    min-width: @mobile-width;
     margin: 0;
     padding: 0;
 
-    font-family: 'Montserrat', 'Arial', sans-serif;
-    font-size: 1.6rem;
-    line-height: 24px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 18.75px;
+    font-weight: 300;
+    color: #fff;
+
+    background-color: #1B1B22;
+}
+
+.phone-link {
+    display: block;
+    font-family: 'Neumann', 'Times New Roman', serif;
+    font-size: 20px;
     font-weight: 400;
-    background-color: #333333;
+    line-height: 29px;
+    text-align: right;
+    text-decoration: none;
+
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #FFCC9A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.phone-icon {
+    position: relative;
+
+    width: 26px;
+    height: 26px;
+
+    border-radius: 50%;
+
+    background: url('../img/icon-phone.svg') no-repeat 50% 50%/10px 10px,
+                linear-gradient(180deg, #FFFFFF 0%, #FFCC9A 100%);
+    box-shadow: 0px 14px 46px rgba(241, 187, 135, 0.3);
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        width: 36px;
+        height: 36px;
+
+        border-radius: 50%;
+
+        background: linear-gradient(180deg, #FFFFFF 0%, #FFCC9A 100%);
+        opacity: 0.2;
+        box-shadow: 0px 14px 46px rgba(241, 187, 135, 0.3);
+
+        transform: translate(-50%, -50%);
+    }
 }

@@ -4,42 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/libs/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" sizes="52x52">
     <title>Верхний луг</title>
 </head>
 <body class="page__body">
     <header class="header">
-        <div class="container header__wrapper">
+        <div class="container-small header__wrapper">
             <div class="header__panel">
                 <a href="index.html" class="header__logo">
                     <img src="img/logo-main.svg" alt="Логитип компании Верхний луг">
                 </a>
 
-                <nav class="header__nav nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">О проекте</li>
-                        <li class="nav__item">Расположение</li>
-                        <li class="nav__item">Генплан</li>
-                        <li class="nav__item">Планировки</li>
-                        <li class="nav__item">Ипотека</li>
-                        <li class="nav__item">Галерея</li>
-                    </ul>
-                </nav>
+                <div class="header__menu">
+                    <nav class="header__nav nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#" class="nav__link nav__link--active">О проекте</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Расположение</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Генплан</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Планировки</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Ипотека</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Галерея</a></li>
+                        </ul>
+                    </nav>
 
-                <div class="header__contacts">
-                    <div class="header__phone phone-link phone-icon">
-                        <a href="tel:+74957400623">+7(495)740-06-23</a>
-                    </div>
+                    <div class="header__contacts">
+                        <a href="tel:+74957400623" class="header__phone">
+                            <span class="phone-icon"></span>
+                            <span class="phone-link">+7(495)740-06-23</span>
+                        </a>
 
-                    <div class="header__socials">
-                        <a href="#" class="header__vk"></a>
-                        <a href="#" class="header__watsapp"></a>
-                        <a href="#" class="header__tg"></a>
-                    </div>
+                        <div class="header__socials-wrapper">
+                            <a href="#" class="header__socials header__socials--vk"></a>
+                            <a href="#" class="header__socials header__socials--whatsapp"></a>
+                            <a href="#" class="header__socials header__socials--tg"></a>
+                        </div>
 
-                    <div class="header__call">
-                        <a href="#" class="header__call-link">Заказать звонок</a>
+                        <div class="header__call">
+                            <a href="#" class="header__call-link">Заказать звонок</a>
+                        </div>
                     </div>
+                </div>
+
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
 
@@ -52,7 +64,7 @@
                     </li>
 
                     <li class="site-nav__item">
-                        <a href="#" class="site-nav__link">Наши дома</a>
+                        <a href="#" class="site-nav__link site-nav__link--active">Наши дома</a>
                     </li>
                 </ul>
             </div>
@@ -64,13 +76,13 @@
             <div class="village-map__wrapper">
                 <h2 class="village-map__caption">Схема поселка</h2>
 
-                <p class="village-map__desc"><span>Квартал “Верхний луг”</span> находится в деревне Вертлино, расположенной на северо-западе Московской области, в северной части Солнечногорского района, на берегу Сенежского озера, примерно в 5 км к северу от центра города Солнечногорска, с которым связана прямым автобусным сообщением.</p>
+                <p class="container-small village-map__desc"><span>Квартал “Верхний луг”</span> находится в деревне Вертлино, расположенной на северо-западе Московской области, в северной части Солнечногорского района, на берегу Сенежского озера, примерно в 5 км к северу от центра города Солнечногорска, с которым связана прямым автобусным сообщением.</p>
 
                 <img src="img/content-cottege-map.jpg" alt="Схема поселка квартала Верхний луг">
             </div>
         </section>
 
-        <section class="layout">
+        <section class="container-big layout">
             <h2 class="layout__caption">
                 <span>Дом #4</span> планировка
             </h2>
@@ -226,6 +238,8 @@
                                 </ul>
 
                                 <div class="numbers__options options">
+                                    <p class="options__caption">Дополнительные опции</p>
+                                    
                                     <ul class="options__list">
                                         <li class="options__item">
                                             <p class="options__data">Гараж</p>
@@ -252,5 +266,10 @@
     </main>
 
     <footer class="footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts/libs/lightgallery.min.js"></script>
+    <script src="scripts/libs/lg-thumbnail.min.js"></script>
+    <!-- <script src="scripts/main.min.js"></script> -->
 </body>
 </html>
