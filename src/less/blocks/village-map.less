@@ -1,19 +1,45 @@
 .village-map {
-    position: relative;
+    margin-bottom: 40px;
+    padding-top: 10px;
+}
 
-    &::before {
-        content: "";
+.village-map__wrapper {
 
-        position: absolute;
-        top: 0;
-        left: 0;
+}
 
-        width: 100%;
-        height: 285px;
+.village-map__caption {
+    margin-bottom: 35px;
 
-        background: linear-gradient(180deg, #1B1B22 0%, rgba(27, 27, 34, 0) 100%);
-        transform: matrix(1, 0, 0, -1, 0, 0) translateY(100%);
+    .neumann;
+    font-size: 40px;
+    line-height: 59px;
+    text-align: center;
+    text-transform: uppercase;
 
-        z-index: 2;
+    background: linear-gradient(116.71deg, #ECBB87 14.82%, #FFFFFF 54.14%, #FFCC9A 86.04%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-shadow: 0px 14px 46px rgba(241, 187, 135, 0.3);
+}
+
+.village-map__desc {
+    margin-bottom: 50px;
+
+    .condensed;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    & > span {
+        .neumann;
+        color: #FFCC9A;
     }
+}
+
+.village-map__img {
+    width: 100%;
+    height: auto;
 }

@@ -67,10 +67,6 @@
     box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
-}
-
 ul, ol, dl {
     list-style: none;
 }
@@ -91,18 +87,18 @@ ul, ol, dl {
 
 .container-big {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1460px;
     height: auto;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 30px;
 }
 
 .container-small {
     width: 100%;
-    max-width: 1240px;
+    max-width: 1200px;
     height: auto;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 30px;
 }
 
 .page__body {
@@ -120,11 +116,75 @@ ul, ol, dl {
     background-color: #1B1B22;
 }
 
+.page__button {
+    position: relative;
+
+    width: 250px;
+    height: 72px;
+    padding: 10px;
+
+    .montserrat;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+
+    background: linear-gradient(180deg, #ECBB87 0%, #FFCC9A 100%);
+    box-shadow: 0px 14px 46px rgba(241, 187, 135, 0.3), inset 0px 0px 28px rgba(255, 255, 255, 0.3), inset 0px -4px #CF9376;
+    border-radius: 15px;
+    border: none;
+
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: -35%;
+        left: 46%;
+
+        width: 68%;
+        height: 69%;
+
+        border-radius: 50%;
+
+        background: #F0DDC9;
+        filter: blur(30.5px);
+    }
+
+    &::after {
+        content: "";
+
+        position: absolute;
+        top: 35%;
+        left: -10%;
+
+        width: 39%;
+        height: 86%;
+
+        border-radius: 50%;
+
+        background: #FFE3BF;
+        filter: blur(30.5px);
+    } 
+
+    &:hover {
+        box-shadow: 0px 14px 60px 15px rgba(241, 187, 135, 0.3), inset 0px 0px 28px rgba(255, 255, 255, 0.3), inset 0px -4px #CF9376;
+    }
+
+    &:active {
+        box-shadow: 0px 14px 34px rgba(241, 187, 135, 0.3), inset 0px 0px 28px rgba(255, 255, 255, 0.3), inset 0px -4px #CF9376;
+        opacity: 0.8;
+    }
+}
+
 .phone-link {
     display: block;
-    font-family: 'Neumann', 'Times New Roman', serif;
+
+    .neumann;
     font-size: 20px;
-    font-weight: 400;
     line-height: 29px;
     text-align: right;
     text-decoration: none;
@@ -138,6 +198,7 @@ ul, ol, dl {
 .phone-icon {
     position: relative;
 
+    display: block;
     width: 26px;
     height: 26px;
 

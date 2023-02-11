@@ -1,6 +1,32 @@
 //Widths:
 
-@mobile-width: 320px;
+@mobile-width: 375px;
 @tablet-width: 768px;
 @desktop-width: 1200px;
 
+//Fonts mixins: 
+
+.condensed {
+    font-family: 'RobotoCondensed', 'Arial', sans-serif;
+    font-weight: 300;
+}
+
+.neumann {
+    font-family: 'Neumann', 'Arial', sans-serif;
+    font-weight: 400;
+}
+
+.montserrat {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 600;
+}
+
+//Color mixins:
+
+.white2blue {
+    background-image: linear-gradient(180deg, #FFFFFF 30%, #BBBBBB 80%);
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
