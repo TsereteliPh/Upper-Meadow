@@ -32,7 +32,7 @@
         content: "";
 
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         left: 0;
 
         width: 100%;
@@ -373,6 +373,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+
+    @media (max-width: @tablet-width) {
+        font-size: 56px;
+        line-height: 72px;
+    }
 }
 
 .site-nav {

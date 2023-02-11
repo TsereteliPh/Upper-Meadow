@@ -89,7 +89,9 @@
                 </h2>
 
                 <div class="cottage__wrapper swiper">
-                    <div class="cottage__nav swiper-pagination"></div>
+                    <div class="cottage__nav-wrapper">
+                        <div class="cottage__nav"></div>
+                    </div>
 
                     <ul class="cottage__list swiper-wrapper">
                         <li class="cottage__item swiper-slide">
@@ -134,7 +136,7 @@
                             </div>
 
                             <div class="cottage__gallery gallery">
-                                <div id="cottage4" class="gallery__wrapper">
+                                <div class="gallery__wrapper js-light-gallery">
                                     <a href="img/content-cottege4-view1.jpg" class="gallery__item">
                                         <img src="img/content-cottege4-view1.jpg" alt="Фотография дома номер 4, вид 1" class="gallery__img" loading="lazy">
                                     </a>
@@ -147,12 +149,12 @@
                                         <img src="img/content-cottege4-view1.jpg" alt="Фотография дома номер 4, вид 1" class="gallery__img" loading="lazy">
                                     </a>
                     
-                                    <a href="img/content-cottege4-view1.jpg" class="gallery__item"
-                                        data-video='{"source": [{"src":"/videos/video1.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'
+                                    <a class="gallery__item gallery__item--video"
+                                        data-video='{"source": [{"src":"video/cottage4-review.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'
                                         data-poster="img/content-cottege4-view1.jpg"
                                         >
 
-                                        <img src="img/content-cottege4-view1.jpg" alt="Видео дома номер 4, вид 1" class="gallery__img gallery__video" loading="lazy">
+                                        <img src="img/content-cottege4-view1.jpg" alt="Видео дома номер 4, вид 1" class="gallery__img" loading="lazy">
                                     </a>
                                 </div>
 
@@ -246,15 +248,707 @@
                                         
                                         <ul class="options__list">
                                             <li class="options__item">
-                                                <p class="options__data">Гараж</p>
+                                                <p class="options__data">Гараж:</p>
                                                 <p class="options__price">133 000 руб.</p>
                                             </li>
                                             <li class="options__item">
-                                                <p class="options__data">Зимний сад</p>
+                                                <p class="options__data">Зимний сад:</p>
                                                 <p class="options__price">133 000 руб.</p>
                                             </li>
                                             <li class="options__item">
-                                                <p class="options__data">Дополнительный септик</p>
+                                                <p class="options__data">Дополнительный септик:</p>
+                                                <p class="options__price">133 000 руб.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="page__button cottage__button">Забронировать коттедж</button>
+                        </li>
+
+                        <li class="cottage__item swiper-slide">
+                            <div class="cottage__about about">
+                                <h3 class="about__caption">Дом #5</h3>
+
+                                <div class="about__area area">
+                                    <div class="area__wrapper">
+                                        <p class="area__size">324 м<sup>2</sup></p>
+                                        <span class="area__text">Площадь коттеджа</span>
+                                    </div>
+                                    
+                                    <div class="area__wrapper">
+                                        <p class="area__size">2 983 м<sup>2</sup></p>
+                                        <span class="area__text">Площадь дорожного покрытия</span>
+                                    </div>
+                                    
+                                    <div class="area__wrapper">
+                                        <p class="area__size">640 м<sup>2</sup></p>
+                                        <span class="area__text">Площадь территории</span>
+                                    </div>
+                                    
+                                    <div class="area__wrapper">
+                                        <p class="area__size">362 м<sup>2</sup></p>
+                                        <span class="area__text">Площадь озеленения</span>
+                                    </div>
+                                </div>
+
+                                <div class="about__floor-wrapper">
+                                    <div class="about__floor">
+                                        <span>1 этаж</span>
+
+                                        <img src="img/content-cottege4-layout1.png" class="floor__img" alt="Схема первого этажа">
+                                    </div>
+                                    
+                                    <div class="about__floor">
+                                        <span>2 этаж</span>
+
+                                        <img src="img/content-cottege4-layout2.png" alt="Схема второго этажа">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cottage__gallery gallery">
+                                <div class="gallery__wrapper js-light-gallery">
+                                    <a href="img/content-cottege4-view1.jpg" class="gallery__item">
+                                        <img src="img/content-cottege4-view1.jpg" alt="Фотография дома номер 5, вид 1" class="gallery__img" loading="lazy">
+                                    </a>
+                    
+                                    <a href="img/content-cottege4-view1.jpg" class="gallery__item">
+                                        <img src="img/content-cottege4-view1.jpg" alt="Фотография дома номер 5, вид 1" class="gallery__img" loading="lazy">
+                                    </a>
+                    
+                                    <a href="img/content-cottege4-view1.jpg" class="gallery__item">
+                                        <img src="img/content-cottege4-view1.jpg" alt="Фотография дома номер 5, вид 1" class="gallery__img" loading="lazy">
+                                    </a>
+                    
+                                    <a class="gallery__item gallery__item--video"
+                                        data-video='{"source": [{"src":"video/cottage4-review.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'
+                                        data-poster="img/content-cottege4-view1.jpg"
+                                        >
+
+                                        <img src="img/content-cottege4-view1.jpg" alt="Видео дома номер 5, вид 1" class="gallery__img" loading="lazy">
+                                    </a>
+                                </div>
+
+                                <button class="gallery__button">
+                                    <span class="phone-icon"></span>
+                                    <span>Забронировать коттедж</span>
+                                </button>
+                            </div>
+
+                            <div class="cottage__system system">
+                                <div class="system__container">
+                                    <p class="system__desc">Фундамент монолитный:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Cвайно-ростверковый, сваи буроналивные, глубина 2 м ростверк шириной 400 мм</li>    
+                                    </ul>
+                                </div>
+                                
+                                <div class="system__container">
+                                    <p class="system__desc">Стены:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Наружные : камень поризованный Porotherm 44 - 440 мм отделка фасада «Короед»</li>    
+                                        <li class="system__item">Внутренние несущие: Porotherm 250 мм</li>
+                                        <li class="system__item">Перегородки : кирпич 125 мм</li>    
+                                    </ul>
+                                </div>
+                                
+                                <div class="system__container">
+                                    <p class="system__desc">Перекрытие:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Цоколь и 1-й этаж: многопустотные плиты перекрытия</li>    
+                                        <li class="system__item">2-й этаж: перекрытие по деревянным балкам, утепленный минераловатными плитами толщиной 200 мм</li>    
+                                    </ul>
+                                </div>
+                                
+                                <div class="system__container">
+                                    <p class="system__desc">Кровля:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Металлочерепица по деревянной стропильной вентилируемой системе</li>    
+                                    </ul>
+                                </div>
+                                
+                                <div class="system__container">
+                                    <p class="system__desc">Лестница:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Железобетонная, монолитная</li>   
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="about__numbers numbers">
+                                <div class="numbers__wrapper">
+                                    <ul class="numbers__list">
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">от 103 до 200 м2</p>
+                                            <p class="numberes__text">Площадь домов</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">13 837 м2</p>
+                                            <p class="numberes__text">Площадь всех участков</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">от 6 до 12 соток</p>
+                                            <p class="numberes__text">Участки</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">2 983 м2</p>
+                                            <p class="numberes__text">Площадь дорожного покрытия</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">18 817 м2</p>
+                                            <p class="numberes__text">Площадь территории</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">362 м2</p>
+                                            <p class="numberes__text">Площадь озеленения</p>
+                                        </li>
+                                    </ul>
+
+                                    <div class="numbers__options options">
+                                        <p class="options__caption">Дополнительные опции</p>
+                                        
+                                        <ul class="options__list">
+                                            <li class="options__item">
+                                                <p class="options__data">Гараж:</p>
+                                                <p class="options__price">133 000 руб.</p>
+                                            </li>
+                                            <li class="options__item">
+                                                <p class="options__data">Зимний сад:</p>
+                                                <p class="options__price">133 000 руб.</p>
+                                            </li>
+                                            <li class="options__item">
+                                                <p class="options__data">Дополнительный септик:</p>
+                                                <p class="options__price">133 000 руб.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="page__button cottage__button">Забронировать коттедж</button>
+                        </li>
+
+                        <li class="cottage__item swiper-slide">
+                            <div class="cottage__about about">
+                                <h3 class="about__caption">Дом #6</h3>
+
+                                <div class="about__area area">
+                                    <div class="area__wrapper">
+                                        <p class="area__size">324 м<sup>2</sup></p>
+                                        <span class="area__text">Площадь коттеджа</span>
+                                    </div>
+                                    
+                                    <div class="area__wrapper">
+                                        <p class="area__size">2 983 м<sup>2</sup></p>
+                                        <span class="area__text">Площадь дорожного покрытия</span>
+                                    </div>
+                                    
+                                    <div class="area__wrapper">
+                                        <p class="area__size">640 м<sup>2</sup></p>
+                                        <span class="area__text">Площадь территории</span>
+                                    </div>
+                                    
+                                    <div class="area__wrapper">
+                                        <p class="area__size">362 м<sup>2</sup></p>
+                                        <span class="area__text">Площадь озеленения</span>
+                                    </div>
+                                </div>
+
+                                <div class="about__floor-wrapper">
+                                    <div class="about__floor">
+                                        <span>1 этаж</span>
+
+                                        <img src="img/content-cottege4-layout1.png" class="floor__img" alt="Схема первого этажа">
+                                    </div>
+                                    
+                                    <div class="about__floor">
+                                        <span>2 этаж</span>
+
+                                        <img src="img/content-cottege4-layout2.png" alt="Схема второго этажа">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cottage__gallery gallery">
+                                <div class="gallery__wrapper js-light-gallery">
+                                    <a href="img/content-cottege4-view1.jpg" class="gallery__item">
+                                        <img src="img/content-cottege4-view1.jpg" alt="Фотография дома номер 4, вид 1" class="gallery__img" loading="lazy">
+                                    </a>
+                    
+                                    <a href="img/content-cottege4-view1.jpg" class="gallery__item">
+                                        <img src="img/content-cottege4-view1.jpg" alt="Фотография дома номер 4, вид 1" class="gallery__img" loading="lazy">
+                                    </a>
+                    
+                                    <a href="img/content-cottege4-view1.jpg" class="gallery__item">
+                                        <img src="img/content-cottege4-view1.jpg" alt="Фотография дома номер 4, вид 1" class="gallery__img" loading="lazy">
+                                    </a>
+                    
+                                    <a class="gallery__item gallery__item--video"
+                                        data-video='{"source": [{"src":"video/cottage4-review.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'
+                                        data-poster="img/content-cottege4-view1.jpg"
+                                        >
+
+                                        <img src="img/content-cottege4-view1.jpg" alt="Видео дома номер 4, вид 1" class="gallery__img" loading="lazy">
+                                    </a>
+                                </div>
+
+                                <button class="gallery__button">
+                                    <span class="phone-icon"></span>
+                                    <span>Забронировать коттедж</span>
+                                </button>
+                            </div>
+
+                            <div class="cottage__system system">
+                                <div class="system__container">
+                                    <p class="system__desc">Фундамент монолитный:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Cвайно-ростверковый, сваи буроналивные, глубина 2 м ростверк шириной 400 мм</li>    
+                                    </ul>
+                                </div>
+                                
+                                <div class="system__container">
+                                    <p class="system__desc">Стены:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Наружные : камень поризованный Porotherm 44 - 440 мм отделка фасада «Короед»</li>    
+                                        <li class="system__item">Внутренние несущие: Porotherm 250 мм</li>
+                                        <li class="system__item">Перегородки : кирпич 125 мм</li>    
+                                    </ul>
+                                </div>
+                                
+                                <div class="system__container">
+                                    <p class="system__desc">Перекрытие:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Цоколь и 1-й этаж: многопустотные плиты перекрытия</li>    
+                                        <li class="system__item">2-й этаж: перекрытие по деревянным балкам, утепленный минераловатными плитами толщиной 200 мм</li>    
+                                    </ul>
+                                </div>
+                                
+                                <div class="system__container">
+                                    <p class="system__desc">Кровля:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Металлочерепица по деревянной стропильной вентилируемой системе</li>    
+                                    </ul>
+                                </div>
+                                
+                                <div class="system__container">
+                                    <p class="system__desc">Лестница:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Железобетонная, монолитная</li>   
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="about__numbers numbers">
+                                <div class="numbers__wrapper">
+                                    <ul class="numbers__list">
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">от 103 до 200 м2</p>
+                                            <p class="numberes__text">Площадь домов</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">13 837 м2</p>
+                                            <p class="numberes__text">Площадь всех участков</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">от 6 до 12 соток</p>
+                                            <p class="numberes__text">Участки</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">2 983 м2</p>
+                                            <p class="numberes__text">Площадь дорожного покрытия</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">18 817 м2</p>
+                                            <p class="numberes__text">Площадь территории</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">362 м2</p>
+                                            <p class="numberes__text">Площадь озеленения</p>
+                                        </li>
+                                    </ul>
+
+                                    <div class="numbers__options options">
+                                        <p class="options__caption">Дополнительные опции</p>
+                                        
+                                        <ul class="options__list">
+                                            <li class="options__item">
+                                                <p class="options__data">Гараж:</p>
+                                                <p class="options__price">133 000 руб.</p>
+                                            </li>
+                                            <li class="options__item">
+                                                <p class="options__data">Зимний сад:</p>
+                                                <p class="options__price">133 000 руб.</p>
+                                            </li>
+                                            <li class="options__item">
+                                                <p class="options__data">Дополнительный септик:</p>
+                                                <p class="options__price">133 000 руб.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="page__button cottage__button">Забронировать коттедж</button>
+                        </li>
+
+                        <li class="cottage__item swiper-slide">
+                            <div class="cottage__about about">
+                                <h3 class="about__caption">Дом #7</h3>
+
+                                <div class="about__area area">
+                                    <div class="area__wrapper">
+                                        <p class="area__size">324 м<sup>2</sup></p>
+                                        <span class="area__text">Площадь коттеджа</span>
+                                    </div>
+                                    
+                                    <div class="area__wrapper">
+                                        <p class="area__size">2 983 м<sup>2</sup></p>
+                                        <span class="area__text">Площадь дорожного покрытия</span>
+                                    </div>
+                                    
+                                    <div class="area__wrapper">
+                                        <p class="area__size">640 м<sup>2</sup></p>
+                                        <span class="area__text">Площадь территории</span>
+                                    </div>
+                                    
+                                    <div class="area__wrapper">
+                                        <p class="area__size">362 м<sup>2</sup></p>
+                                        <span class="area__text">Площадь озеленения</span>
+                                    </div>
+                                </div>
+
+                                <div class="about__floor-wrapper">
+                                    <div class="about__floor">
+                                        <span>1 этаж</span>
+
+                                        <img src="img/content-cottege4-layout1.png" class="floor__img" alt="Схема первого этажа">
+                                    </div>
+                                    
+                                    <div class="about__floor">
+                                        <span>2 этаж</span>
+
+                                        <img src="img/content-cottege4-layout2.png" alt="Схема второго этажа">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cottage__gallery gallery">
+                                <div class="gallery__wrapper js-light-gallery">
+                                    <a href="img/content-cottege4-view1.jpg" class="gallery__item">
+                                        <img src="img/content-cottege4-view1.jpg" alt="Фотография дома номер 4, вид 1" class="gallery__img" loading="lazy">
+                                    </a>
+                    
+                                    <a href="img/content-cottege4-view1.jpg" class="gallery__item">
+                                        <img src="img/content-cottege4-view1.jpg" alt="Фотография дома номер 4, вид 1" class="gallery__img" loading="lazy">
+                                    </a>
+                    
+                                    <a href="img/content-cottege4-view1.jpg" class="gallery__item">
+                                        <img src="img/content-cottege4-view1.jpg" alt="Фотография дома номер 4, вид 1" class="gallery__img" loading="lazy">
+                                    </a>
+                    
+                                    <a class="gallery__item gallery__item--video"
+                                        data-video='{"source": [{"src":"video/cottage4-review.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'
+                                        data-poster="img/content-cottege4-view1.jpg"
+                                        >
+
+                                        <img src="img/content-cottege4-view1.jpg" alt="Видео дома номер 4, вид 1" class="gallery__img" loading="lazy">
+                                    </a>
+                                </div>
+
+                                <button class="gallery__button">
+                                    <span class="phone-icon"></span>
+                                    <span>Забронировать коттедж</span>
+                                </button>
+                            </div>
+
+                            <div class="cottage__system system">
+                                <div class="system__container">
+                                    <p class="system__desc">Фундамент монолитный:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Cвайно-ростверковый, сваи буроналивные, глубина 2 м ростверк шириной 400 мм</li>    
+                                    </ul>
+                                </div>
+                                
+                                <div class="system__container">
+                                    <p class="system__desc">Стены:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Наружные : камень поризованный Porotherm 44 - 440 мм отделка фасада «Короед»</li>    
+                                        <li class="system__item">Внутренние несущие: Porotherm 250 мм</li>
+                                        <li class="system__item">Перегородки : кирпич 125 мм</li>    
+                                    </ul>
+                                </div>
+                                
+                                <div class="system__container">
+                                    <p class="system__desc">Перекрытие:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Цоколь и 1-й этаж: многопустотные плиты перекрытия</li>    
+                                        <li class="system__item">2-й этаж: перекрытие по деревянным балкам, утепленный минераловатными плитами толщиной 200 мм</li>    
+                                    </ul>
+                                </div>
+                                
+                                <div class="system__container">
+                                    <p class="system__desc">Кровля:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Металлочерепица по деревянной стропильной вентилируемой системе</li>    
+                                    </ul>
+                                </div>
+                                
+                                <div class="system__container">
+                                    <p class="system__desc">Лестница:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Железобетонная, монолитная</li>   
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="about__numbers numbers">
+                                <div class="numbers__wrapper">
+                                    <ul class="numbers__list">
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">от 103 до 200 м2</p>
+                                            <p class="numberes__text">Площадь домов</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">13 837 м2</p>
+                                            <p class="numberes__text">Площадь всех участков</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">от 6 до 12 соток</p>
+                                            <p class="numberes__text">Участки</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">2 983 м2</p>
+                                            <p class="numberes__text">Площадь дорожного покрытия</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">18 817 м2</p>
+                                            <p class="numberes__text">Площадь территории</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">362 м2</p>
+                                            <p class="numberes__text">Площадь озеленения</p>
+                                        </li>
+                                    </ul>
+
+                                    <div class="numbers__options options">
+                                        <p class="options__caption">Дополнительные опции</p>
+                                        
+                                        <ul class="options__list">
+                                            <li class="options__item">
+                                                <p class="options__data">Гараж:</p>
+                                                <p class="options__price">133 000 руб.</p>
+                                            </li>
+                                            <li class="options__item">
+                                                <p class="options__data">Зимний сад:</p>
+                                                <p class="options__price">133 000 руб.</p>
+                                            </li>
+                                            <li class="options__item">
+                                                <p class="options__data">Дополнительный септик:</p>
+                                                <p class="options__price">133 000 руб.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="page__button cottage__button">Забронировать коттедж</button>
+                        </li>
+
+                        <li class="cottage__item swiper-slide">
+                            <div class="cottage__about about">
+                                <h3 class="about__caption">Дом #8</h3>
+
+                                <div class="about__area area">
+                                    <div class="area__wrapper">
+                                        <p class="area__size">324 м<sup>2</sup></p>
+                                        <span class="area__text">Площадь коттеджа</span>
+                                    </div>
+                                    
+                                    <div class="area__wrapper">
+                                        <p class="area__size">2 983 м<sup>2</sup></p>
+                                        <span class="area__text">Площадь дорожного покрытия</span>
+                                    </div>
+                                    
+                                    <div class="area__wrapper">
+                                        <p class="area__size">640 м<sup>2</sup></p>
+                                        <span class="area__text">Площадь территории</span>
+                                    </div>
+                                    
+                                    <div class="area__wrapper">
+                                        <p class="area__size">362 м<sup>2</sup></p>
+                                        <span class="area__text">Площадь озеленения</span>
+                                    </div>
+                                </div>
+
+                                <div class="about__floor-wrapper">
+                                    <div class="about__floor">
+                                        <span>1 этаж</span>
+
+                                        <img src="img/content-cottege4-layout1.png" class="floor__img" alt="Схема первого этажа">
+                                    </div>
+                                    
+                                    <div class="about__floor">
+                                        <span>2 этаж</span>
+
+                                        <img src="img/content-cottege4-layout2.png" alt="Схема второго этажа">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cottage__gallery gallery">
+                                <div class="gallery__wrapper js-light-gallery">
+                                    <a href="img/content-cottege4-view1.jpg" class="gallery__item">
+                                        <img src="img/content-cottege4-view1.jpg" alt="Фотография дома номер 4, вид 1" class="gallery__img" loading="lazy">
+                                    </a>
+                    
+                                    <a href="img/content-cottege4-view1.jpg" class="gallery__item">
+                                        <img src="img/content-cottege4-view1.jpg" alt="Фотография дома номер 4, вид 1" class="gallery__img" loading="lazy">
+                                    </a>
+                    
+                                    <a href="img/content-cottege4-view1.jpg" class="gallery__item">
+                                        <img src="img/content-cottege4-view1.jpg" alt="Фотография дома номер 4, вид 1" class="gallery__img" loading="lazy">
+                                    </a>
+                    
+                                    <a class="gallery__item gallery__item--video"
+                                        data-video='{"source": [{"src":"video/cottage4-review.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'
+                                        data-poster="img/content-cottege4-view1.jpg"
+                                        >
+
+                                        <img src="img/content-cottege4-view1.jpg" alt="Видео дома номер 4, вид 1" class="gallery__img" loading="lazy">
+                                    </a>
+                                </div>
+
+                                <button class="gallery__button">
+                                    <span class="phone-icon"></span>
+                                    <span>Забронировать коттедж</span>
+                                </button>
+                            </div>
+
+                            <div class="cottage__system system">
+                                <div class="system__container">
+                                    <p class="system__desc">Фундамент монолитный:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Cвайно-ростверковый, сваи буроналивные, глубина 2 м ростверк шириной 400 мм</li>    
+                                    </ul>
+                                </div>
+                                
+                                <div class="system__container">
+                                    <p class="system__desc">Стены:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Наружные : камень поризованный Porotherm 44 - 440 мм отделка фасада «Короед»</li>    
+                                        <li class="system__item">Внутренние несущие: Porotherm 250 мм</li>
+                                        <li class="system__item">Перегородки : кирпич 125 мм</li>    
+                                    </ul>
+                                </div>
+                                
+                                <div class="system__container">
+                                    <p class="system__desc">Перекрытие:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Цоколь и 1-й этаж: многопустотные плиты перекрытия</li>    
+                                        <li class="system__item">2-й этаж: перекрытие по деревянным балкам, утепленный минераловатными плитами толщиной 200 мм</li>    
+                                    </ul>
+                                </div>
+                                
+                                <div class="system__container">
+                                    <p class="system__desc">Кровля:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Металлочерепица по деревянной стропильной вентилируемой системе</li>    
+                                    </ul>
+                                </div>
+                                
+                                <div class="system__container">
+                                    <p class="system__desc">Лестница:</p>
+
+                                    <ul class="system__list">
+                                        <li class="system__item">Железобетонная, монолитная</li>   
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="about__numbers numbers">
+                                <div class="numbers__wrapper">
+                                    <ul class="numbers__list">
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">от 103 до 200 м2</p>
+                                            <p class="numberes__text">Площадь домов</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">13 837 м2</p>
+                                            <p class="numberes__text">Площадь всех участков</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">от 6 до 12 соток</p>
+                                            <p class="numberes__text">Участки</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">2 983 м2</p>
+                                            <p class="numberes__text">Площадь дорожного покрытия</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">18 817 м2</p>
+                                            <p class="numberes__text">Площадь территории</p>
+                                        </li>
+
+                                        <li class="numbers__item">
+                                            <p class="numbers__data">362 м2</p>
+                                            <p class="numberes__text">Площадь озеленения</p>
+                                        </li>
+                                    </ul>
+
+                                    <div class="numbers__options options">
+                                        <p class="options__caption">Дополнительные опции</p>
+                                        
+                                        <ul class="options__list">
+                                            <li class="options__item">
+                                                <p class="options__data">Гараж:</p>
+                                                <p class="options__price">133 000 руб.</p>
+                                            </li>
+                                            <li class="options__item">
+                                                <p class="options__data">Зимний сад:</p>
+                                                <p class="options__price">133 000 руб.</p>
+                                            </li>
+                                            <li class="options__item">
+                                                <p class="options__data">Дополнительный септик:</p>
                                                 <p class="options__price">133 000 руб.</p>
                                             </li>
                                         </ul>
@@ -275,6 +969,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="scripts/libs/lightgallery.min.js"></script>
     <script src="scripts/libs/lg-thumbnail.min.js"></script>
+    <script src="scripts/libs/lg-video.min.js"></script>
     <script src="scripts/main.min.js"></script>
 </body>
 </html>
